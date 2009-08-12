@@ -1,4 +1,4 @@
-set mouse=a
+"set mouse=a
 set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
@@ -28,8 +28,15 @@ set ignorecase
 set number
 
 " TListPlugin
-let Tlist_Show_One_File = 1
+"let Tlist_Show_One_File = 1
 
 " vimlatex
 let g:tex_flavor='latex'
 set grepprg=grep\ -nH\ $*
+set iskeyword+=:
+
+
+" spelling
+"setlocal spell spelllang=en_us
+setlocal spell spelllang=de
+set invspell
