@@ -1,4 +1,0 @@
-export EDITOR='vim'
-export PATH=/home/muxe/games/bin:/home/muxe/workspace/scripts:/home/muxe/bin:/home/muxe/local/bin:/home/muxe/.gem/ruby/1.8/bin:${PATH}:/usr/local/netbeans-6.7.1/bin
-export MANPATH=$HOME/share/man:$MANPATH
-export DISPLAY=':0'

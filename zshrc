@@ -35,3 +35,6 @@ zstyle ':completion:*' insert-tab pending
 for file in $HOME/.zsh/rc/*.rc; do
 	source $file
 done
+
+# use .localrc for settings specific to one system
+[[ -f ~/.localrc ]] && .  ~/.localrc

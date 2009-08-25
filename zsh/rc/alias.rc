@@ -27,7 +27,6 @@ alias top="htop"
 alias rtorrent='if pgrep rtorrent;then screen -x tor;else screen -S torrent rtorrent;fi'
 alias irssi='if pgrep irssi;then screen -x irc;else screen -S irc irssi;fi'
 alias ev="evince"
-alias netbeans='netbeans -J-Duser.name="Marc Schuba (mschuba at TechFak.Uni-Bielefeld.DE)"'
 
 # do a du -hs on each dir on current path
 alias lsdir="for dir in *;do;if [ -d \$dir ];then;du -hsL \$dir;fi;done"
