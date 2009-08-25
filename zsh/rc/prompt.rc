@@ -1,0 +1,26 @@
+# for have colors
+autoload -U colors
+colors
+
+# define your colors here (i hate white background)
+host_color="green" 
+path_color="blue"
+git_color="red"
+
+host="%{$fg[$host_color]%}%n@%m"
+cpath="%B%{$fg[$path_color]%}%/%b"
+lpath="%B%{$fg[$path_color]%}[%3~]%b"
+end="%B%{$fg[$path_color]%}$ %{$reset_color%}"
+
+#export PS1="$host $lpath $end"
+#export PS1='%m:%3~$(git_info_for_prompt)%# '
+
+
+
+if [[ -n $SSH_CONNECTION ]]; then
+  # mit ssh
+  export PS1='$host $lpath%B%{$fg[$git_color]%}$(git_info_for_prompt)% %B%{$fg[$path_color]%} # %{$reset_color%}'
+else 
+  # ohne ssh
+  export PS1='$lpath%B%{$fg[$git_color]%}$(git_info_for_prompt)% %B%{$fg[$path_color]%} # %{$reset_color%}'
+fi

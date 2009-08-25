@@ -1,0 +1,33 @@
+# ls
+alias ls="ls --color=auto -Fh"
+alias ll="ls -ltr"
+
+# (g)vi(m)
+alias g="gvim --servername MAIN --remote-silent"
+alias vi="vim"
+
+# git
+alias gl='git pull'
+alias gp='git push'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias gs='git status'
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+
+# shutdown
+alias reboot="/sbin/shutdown -r now"
+alias halt="/sbin/shutdown -h now"
+
+# misc programs
+alias m="mplayer"
+alias top="htop"
+alias rtorrent='if pgrep rtorrent;then screen -x tor;else screen -S torrent rtorrent;fi'
+alias irssi='if pgrep irssi;then screen -x irc;else screen -S irc irssi;fi'
+alias ev="evince"
+alias netbeans='netbeans -J-Duser.name="Marc Schuba (mschuba at TechFak.Uni-Bielefeld.DE)"'
+
+# do a du -hs on each dir on current path
+alias lsdir="for dir in *;do;if [ -d \$dir ];then;du -hsL \$dir;fi;done"
