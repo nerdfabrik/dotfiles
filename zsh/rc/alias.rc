@@ -4,7 +4,7 @@ alias ll="ls -ltr"
 
 # (g)vi(m)
 alias g="gvim --servername MAIN --remote-silent"
-alias vi="vim"
+#alias vi="vim"
 
 # git
 alias gl='git pull'

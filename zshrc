@@ -25,6 +25,8 @@ bindkey "\e[4~" end-of-line             # End (console)
 bindkey "\e[F" end-of-line              # End (xorg)
 bindkey "\e[2~" overwrite-mode          # Ins
 bindkey "\e[3~" delete-char             # Delete
+bindkey "5C" forward-word              # ctrl+Left
+bindkey "5D" backward-word             # ctrl+Right
 
 # Activation
 compinit
