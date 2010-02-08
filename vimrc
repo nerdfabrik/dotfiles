@@ -1,3 +1,5 @@
+call pathogen#runtime_prepend_subdirectories(expand('~/.vimbundles'))
+colorscheme darkblue
 "set mouse=a
 set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
@@ -16,6 +18,7 @@ set nowrap
 imap <S-CR> <ESC>:execute 'normal o' . EndToken()<CR>O 
 
 
+map <F3> :NERDTreeToggle<cr>
 map <F4> :set nu!<cr>
 map <F5> gg=G<cr>
 set pastetoggle=<F11>
@@ -34,9 +37,12 @@ set number
 let g:tex_flavor='latex'
 set grepprg=grep\ -nH\ $*
 set iskeyword+=:
+let g:Tex_AutoFolding=0
 
 
 " spelling
 "setlocal spell spelllang=en_us
 setlocal spell spelllang=de
 set invspell
+nnoremap <C-down> ]s
+nnoremap <C-up> [s

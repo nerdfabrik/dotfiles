@@ -1,6 +1,7 @@
 # ls
 alias ls="ls --color=auto -Fh"
 alias ll="ls -ltr"
+alias l="ls -l"
 
 # (g)vi(m)
 alias g="gvim --servername MAIN --remote-silent"
