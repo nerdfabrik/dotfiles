@@ -22,7 +22,7 @@ map <F3> :NERDTreeToggle<cr>
 map <F4> :set nu!<cr>
 map <F5> gg=G<cr>
 set pastetoggle=<F11>
-set tw=80
+set tw=78
 set showmatch
 set virtualedit=all
 "au Syntax * syn match Error /\s\+$/ | syn match Error /^\s* \t\s*/

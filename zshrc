@@ -8,8 +8,8 @@
 fpath=($HOME/.zsh/functions $fpath)
 autoload -U ~/.zsh/functions/*(:t)
 
-export PATH=${HOME}/.gem/ruby/1.8/bin:${HOME}/workspace/android-sdk-linux_86/tools:${PATH}
-export ANDROID_HOME="${HOME}/workspace/android-sdk-linux_86"
+export PATH=${HOME}/.gem/ruby/1.8/bin:${HOME}/conangel/android-sdk-linux_86/tools:${PATH}
+export ANDROID_HOME="${HOME}/conangel/android-sdk-linux_86"
 
 # colors
 eval `dircolors $HOME/.zsh/colors`
@@ -40,6 +40,8 @@ zstyle ':completion:*' insert-tab pending
 for file in $HOME/.zsh/rc/*.rc; do
 	source $file
 done
+
+#if [[ -s /home/muxe/.rvm/scripts/rvm ]] ; then source /home/muxe/.rvm/scripts/rvm ; fi
 
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && .  ~/.localrc
