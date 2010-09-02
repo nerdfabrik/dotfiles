@@ -22,5 +22,5 @@ if [[ -n $SSH_CONNECTION ]]; then
   export PS1='$host $lpath%B%{$fg[$git_color]%}$(git_info_for_prompt)% %B%{$fg[$path_color]%} # %{$reset_color%}'
 else 
   # ohne ssh
-  export PS1='$lpath%B%{$fg[$git_color]%}$(git_info_for_prompt)% %B%{$fg[$path_color]%} # %{$reset_color%}'
+  export PS1='$lpath%B%{$fg[$git_color]%}$(git_info_for_prompt)% $(rvm_info)% %B%{$fg[$path_color]%} # %{$reset_color%}'
 fi

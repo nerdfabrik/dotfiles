@@ -18,6 +18,7 @@ set nowrap
 imap <S-CR> <ESC>:execute 'normal o' . EndToken()<CR>O 
 
 
+map  :NERDTreeToggle<cr>
 map <F3> :NERDTreeToggle<cr>
 map <F4> :set nu!<cr>
 map <F5> gg=G<cr>

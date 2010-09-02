@@ -8,7 +8,7 @@
 fpath=($HOME/.zsh/functions $fpath)
 autoload -U ~/.zsh/functions/*(:t)
 
-export PATH=${HOME}/.gem/ruby/1.8/bin:${HOME}/conangel/android-sdk-linux_86/tools:${PATH}
+export PATH=/var/lib/gems/1.8/bin:${HOME}/.gem/ruby/1.8/bin:${HOME}/conangel/android-sdk-linux_86/tools:${PATH}
 export ANDROID_HOME="${HOME}/conangel/android-sdk-linux_86"
 
 # colors
@@ -45,3 +45,5 @@ done
 
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && .  ~/.localrc
+
+umask 027

@@ -11,11 +11,11 @@ alias g="gvim --servername MAIN --remote-silent"
 alias gl='git pull'
 alias gp='git push'
 alias gd='git diff'
-alias gc='git commit'
+alias gitc='git commit'
 alias gca='git commit -a'
 alias gco='git checkout'
 alias gb='git branch'
-alias gs='git status'
+alias gits='git status'
 alias gdc='git svn dcommit'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
@@ -32,3 +32,6 @@ alias ev="evince"
 
 # do a du -hs on each dir on current path
 alias lsdir="for dir in *;do;if [ -d \$dir ];then;du -hsL \$dir;fi;done"
+
+# load statistics for conangel team server
+alias conangel_load='ssh conangel /home/mschuba/server_load.sh'
