@@ -32,6 +32,3 @@ alias ev="evince"
 
 # do a du -hs on each dir on current path
 alias lsdir="for dir in *;do;if [ -d \$dir ];then;du -hsL \$dir;fi;done"
-
-# load statistics for conangel team server
-alias conangel_load='ssh conangel /home/mschuba/server_load.sh'

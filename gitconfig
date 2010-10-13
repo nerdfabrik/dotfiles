@@ -1,0 +1,21 @@
+[user]
+  name = mschuba
+  email = marc@nerdfabrik.org
+[color]
+  ui = true
+  branch = auto
+  diff = auto
+  status = auto
+[merge]
+  tool = gvimdiff
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  gr = grep -n --color=auto
+  lsd = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  dev = checkout devel
+  ma = checkout master
