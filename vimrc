@@ -46,7 +46,7 @@ let g:Tex_AutoFolding=0
 
 " spelling
 "setlocal spell spelllang=en_us
-setlocal spell spelllang=de
-set invspell
-nnoremap <C-down> ]s
-nnoremap <C-up> [s
+"setlocal spell spelllang=de
+"set invspell
+"nnoremap <C-down> ]s
+"nnoremap <C-up> [s
